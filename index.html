@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Bestie 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted playsinline loop id="bg-video">
+    <source src="bgvdo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div id="video-overlay"></div>
+  
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h1>🎉 🎀 HAPPPYYYY BIRTHDAYYY to youuu 🎀!! 🎉</h1>
+      <p>  ( this is for you...)✨</p>
+      <button onclick="closePopup()">Let's Goooooo!</button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content" style="display: none;">
+    <button onclick="showLetter()">💌 Since I'm too shy saying it... </button>
+    <br>
+    <div id="letter" class="section hidden">
+      <!-- Add your letter/poem here -->
+      <p id="typewriter-text">
+    </div>
+    <canvas id="sparkle-canvas"></canvas>
+  </div>
+  <script src="script.js"></script>
+ 
+</body>
+</html>
